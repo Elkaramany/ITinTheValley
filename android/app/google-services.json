@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "576956181614",
+    "project_id": "itinthevalley-bba2b",
+    "storage_bucket": "itinthevalley-bba2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576956181614:android:d5bf898123422f64e54a7f",
+        "android_client_info": {
+          "package_name": "com.itinthevalley"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576956181614-sa5q75pcdmgd9p5df0or0t2fsemhdd2k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itinthevalley",
+            "certificate_hash": "a8313fbceca8df52f347e19cbaa3aefe133d3d01"
+          }
+        },
+        {
+          "client_id": "576956181614-7bngoa8jhd1rl5pm7kblfmn8e4f55rsm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRaj_8UNYAmxE-6phpD7zI6h5i6zUBNAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576956181614-7bngoa8jhd1rl5pm7kblfmn8e4f55rsm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
