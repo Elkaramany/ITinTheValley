@@ -9,7 +9,8 @@ import Menu from '../Components/Menu';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon2 from 'react-native-vector-icons/Ionicons';
 import Settings from '../Components/Settings';
-import DrawerScreen from './Drawer';
+import Approved from '../Components/Approved';
+
 
 const WIDTH = Dimensions.get('window').width
 
@@ -35,10 +36,15 @@ const DrawerNavigator = () => {
 
       screenOptions={({ route }) => ({
         tabBarIcon: ({ focused, color }) => {
-          if (route.name === 'Articles') {
-            return <Icon name={'menu'} size={ICON_SIZE} color={color} />;
-          } else if (route.name === 'Settings') {
-            return <Icon2 name={'settings'} size={ICON_SIZE} color={color} />;
+          switch (route.name){
+            case 'Articles':
+              return <Icon name={'menu'} size={ICON_SIZE} color={color} />;
+              break;
+            case 'Settings':
+              return <Icon2 name={'settings'} size={ICON_SIZE} color={color} />;
+              break;
+            case 'Approved':
+              return <Icon name={'check-circle'} size={ICON_SIZE} color={color} />;
           }
         },
       })}
@@ -54,6 +60,7 @@ const DrawerNavigator = () => {
       >
         <Tab.Screen name={'Articles'} component={Menu} nav/>
         <Tab.Screen name={'Settings'} component={Settings} />
+        <Tab.Screen name={'Approved'} component={Approved} />
       </Tab.Navigator>
   );
 };

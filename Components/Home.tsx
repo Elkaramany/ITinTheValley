@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
         resizeMode: "cover",
         justifyContent: "center"
     }, spinnerContainer: {
-        height: hp('10%'),
+        height: hp('5%'),
         justifyContent: 'center',
         alignItems: 'center',
         margin: hp('5%'),

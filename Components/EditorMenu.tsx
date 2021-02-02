@@ -1,29 +1,13 @@
 import React from 'react'
-import {View, Text, StyleSheet} from 'react-native'
-import {connect} from 'react-redux'
+import EditorApproval from './ApprovedArticlesEditor';
  
 interface Props{
- 
+
 }
  
-const Name: React.FC<Props> = props =>{
-    return(
-        <View style={styles.container}>
-            <Text>Editor menu</Text>
-        </View>
-    )
+const EditorMenu: React.FC<Props> = props =>{
+    return <EditorApproval headerTitle={'All non-approved Articles'} articleApproval={false} />
 }
  
-const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-    },
-})
  
-const mapStateToProps = ({}) =>{
-    return{
- 
-    }
-}
- 
-export default connect(mapStateToProps, {}) (Name);
+export default EditorMenu;

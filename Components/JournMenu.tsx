@@ -16,7 +16,6 @@ import {
     widthPercentageToDP as wp,
     heightPercentageToDP as hp,
 } from 'react-native-responsive-screen'
-import { DrawerNavigationProp } from '@react-navigation/drawer'
 import { TextInput, Switch } from 'react-native-paper'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 import Spinner from './common/Spinner';
@@ -26,7 +25,7 @@ import * as ImagePicker from 'expo-image-picker';
 import firestore from '@react-native-firebase/firestore';
 
 interface Props {
-    user: object | null
+    user: object | null | any
 }
 
 const Name: React.FC<Props> = props => {
@@ -44,7 +43,7 @@ const Name: React.FC<Props> = props => {
             userID: props.user.user.uid
         }).then(() =>{
             setArticleLoad(false);
-            Alert.alert("Article added successfully")
+            Alert.alert("Article added successfully, It will appear in the approved section once an editor approves it")
         }).catch(() =>{
             setArticleLoad(false);
             Alert.alert("Error adding article")

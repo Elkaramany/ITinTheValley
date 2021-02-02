@@ -42,6 +42,7 @@ const Name: React.FC<Props> = props => {
   } = props
 
   useEffect(() => {
+    //to find out the user type and navigate them accordingly
     if (user) {
       let id = user.user.uid
       firestore()
@@ -61,6 +62,7 @@ const Name: React.FC<Props> = props => {
         })
     }
   }, [user])
+
   if (navigated == true) return <EditorMenu />
   else if (navigated == false) return <JournMenu />
   else {
