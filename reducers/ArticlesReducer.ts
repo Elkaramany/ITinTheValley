@@ -36,6 +36,9 @@ export default (state = {INITIAL_STATE}, action) => {
         case 'approve_article_begin':
             return{...state, articleApproveLoading: true}
             break;
+        case 'sign_me_out_success':
+            return{...state, ...INITIAL_STATE}
+            break;
         default:
             return state;
     }
